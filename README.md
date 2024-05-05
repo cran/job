@@ -4,11 +4,12 @@
 
 # job: free your RStudio console
 
-Use `job::job()` to run chunks of R code in an [RStudio](https://www.rstudio.com/) job instead of the console. This frees your console while the job(s) go brrrrr in the background. By default, the result is returned to the global environment when the job completes.
+Use `job::job()` to run chunks of R code in an [RStudio](https://posit.co/products/open-source/rstudio/) job instead of the console. This frees your console while the job(s) go brrrrr in the background. By default, the result is returned to the global environment when the job completes.
 
-Install:
+Install from CRAN (stable) or GitHub (development):
 
 ```r
+install.packages("job")
 remotes::install_github("lindeloev/job")
 ```
 
@@ -54,10 +55,10 @@ job::job({
 
 # Continue working in your console
 cat("I'm free now! Thank you.
-    Sincerely, Console.")
+    Yours truly, Console.")
 ```
 
-Now you can follow the progress in the jobs pane and your console is free in the meantime.
+Now you can follow the progress in the jobs pane and your console is free in the meantime. 
 
 
 ## Tweak your job(s)
